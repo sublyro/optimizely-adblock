@@ -11,7 +11,7 @@
         document.cookie = c_name + "=" + c_value + ";" + c_domain + "path=/";
     };
     xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", "http://maazze.com/adblock.js", true);
+    xmlhttp.open("GET", "https://s3.amazonaws.com/optimizely-playground/adblock.js", true);
     xmlhttp.send();
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4) {
